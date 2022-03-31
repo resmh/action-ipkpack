@@ -1,0 +1,26 @@
+name: 'action-packipk'
+description: 'Packs control as well as data directories into an .ipk file and optionally creates a signed opkg repository.'
+author: "resmh"
+inputs:
+  pkgname:
+    description: 'Name of the package to be created.'
+    required: false
+    default: 'package'
+  pkgrepo:
+    description: 'Create repository for package.'
+    required: false
+    default: '0'
+  pkggpgrepokey:
+    description: 'Sign package repository with this gpg key.'
+    required: false
+    default: ''
+  pkgsignifyrepokey:
+    description: 'Sign package repository with this signify key.'
+    required: false
+    default: ''
+runs:
+  using: 'node12'
+  main: 'start.js'
+branding:
+  icon: 'arrow-up-circle'
+  color: 'green'
