@@ -7,7 +7,7 @@ Example:
       - name: Pack my-application.ipk
         uses: resmh/action-ipkpack@master
         with:
-          input: relative-input-folder
-          output: relative-output-folder
-          timestamp: 1
-          timestamp_patch: 1
+          input: . (relative-input-folder)
+          output: . (relative-output-folder)
+          timestamp: 0 (0/1)
+          timestamp_patch: 0 (0/1)
