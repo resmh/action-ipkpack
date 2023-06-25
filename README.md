@@ -5,7 +5,7 @@ Github action for packing an input directory comprising of control as well as da
 Example using repository secrets for base64 key storage:
 
       - name: Pack my-application.ipk
-        uses: resmh/action-packipk@master
+        uses: resmh/action-ipkpack@master
         with:
           input: relative-input-folder
           output: relative-output-folder
